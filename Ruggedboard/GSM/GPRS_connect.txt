@@ -1,0 +1,26 @@
+1) Copy the below files into in this path /etc/ppp/peers/
+
+a)quectel-chat-connect
+
+b)quectel-chat-disconnect
+
+c)quectel-ppp
+
+2)give your application location in the below script file 
+
+a)ec200t.sh
+
+i.e 
+app_start () {
+
+if [ $APP_FLAG -ne 0 ];then
+            /usr/sbin/ntpd -u ntp:ntp -p /run/ntpd.pid -g
+            sleep 20
+         #   /home/root/ec200t.sh &  //here you can run your application.
+            APP_FLAG=0
+        fi
+}
+
+
+3) Reboot the the board and run ec200t.sh
+
