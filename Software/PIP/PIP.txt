@@ -1,0 +1,19 @@
+Whenever PIP is not working check date and time then set it accordningly
+
+
+
+date
+
+date 123112592021.59 (date monthdatehourminyear.sec)
+
+hwclock -w -f /dev/rtc0
+
+hwclock -r -f /dev/rtc0
+
+dmesg | grep rtc0
+
+reboot
+
+date
+
+ 

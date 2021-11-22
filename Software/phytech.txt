@@ -1,0 +1,1143 @@
+barebox@Phytec phyCORE-i.MX6 Ultra Lite SOM with NAND:/ boot nand
+booting 'nand'
+
+
+barebox@Phytec phyCORE-i.MX6 Ultra Lite SOM with NAND:/ cd /mnt/mmc
+barebox@Phytec phyCORE-i.MX6 Ultra Lite SOM with NAND:/mnt/mmc ls
+.
+..
+Schematic
+System Volume Information
+barebox.bin
+custom_images
+glibc.tar.gz
+phytec-qt5demo-image-rb-imx6ul.sdcard
+phytec-qt5demo-image-rb-imx6ul.tar.gz
+phytec-qt5demo-image-rb-imx6ul.ubifs
+phytec-yogurt-glibc-x86_64-phytec-qt5demo-image-cortexa7hf-neon-vfpv4-toolchain-BSP-Yocto-i.MX6UL-PD19.1.0.sh
+zImage
+zImage-imx6ul-phytec-ruggedboard-rdk.dtb
+barebox@Phytec phyCORE-i.MX6 Ultra Lite SOM with NAND:/mnt/mmc erase /dev/nand0.root
+Skipping bad block at 0x1fa80000
+Skipping bad block at 0x1faa0000
+Skipping bad block at 0x1fac0000
+Skipping bad block at 0x1fae0000
+barebox@Phytec phyCORE-i.MX6 Ultra Lite SOM with NAND:/mnt/mmc 
+barebox@Phytec phyCORE-i.MX6 Ultra Lite SOM with NAND:/mnt/mmc 
+barebox@Phytec phyCORE-i.MX6 Ultra Lite SOM with NAND:/mnt/mmc 
+barebox@Phytec phyCORE-i.MX6 Ultra Lite SOM with NAND:/mnt/mmc barebox_update -t nand barebox.bin   
+Image Metadata:
+  build: #1 Wed Jul 8 12:11:08 UTC 2020
+  release: 2019.01.0-bsp-yocto-i.mx6ul-pd19.1.0
+  parameter: memsize=512
+imx-bbu-nand-fcb: Firmware @ page 256, size 315 pages has crc32: 0xf7c489c0
+imx-bbu-nand-fcb: Firmware @ page 1152, size 315 pages has crc32: 0xf7c489c0
+imx-bbu-nand-fcb: Primary firmware is on pages 256-571, valid, clean
+imx-bbu-nand-fcb: Secondary firmware is on pages 1152-1467, valid, clean
+imx-bbu-nand-fcb: ROM uses slot 0
+update barebox from barebox.bin using handler nand to nand0.barebox (y/n)?
+updating barebox...
+imx-bbu-nand-fcb: updating slot 1
+imx-bbu-nand-fcb: writing firmware 1 to block 18 (ofs 0x00240000)
+imx-bbu-nand-fcb: Writing FCB/DBBT on block 0
+imx-bbu-nand-fcb: Writing FCB/DBBT on block 1
+imx-bbu-nand-fcb: Writing FCB/DBBT on block 2
+imx-bbu-nand-fcb: Writing FCB/DBBT on block 3
+imx-bbu-nand-fcb: updating slot 0
+imx-bbu-nand-fcb: writing firmware 0 to block 4 (ofs 0x00080000)
+update succeeded
+barebox@Phytec phyCORE-i.MX6 Ultra Lite SOM with NAND:/mnt/mmc 
+barebox@Phytec phyCORE-i.MX6 Ultra Lite SOM with NAND:/mnt/mmc 
+barebox@Phytec phyCORE-i.MX6 Ultra Lite SOM with NAND:/mnt/mmc reset 
+
+
+barebox 2019.01.0-bsp-yocto-i.mx6ul-pd19.1.0 #1 Wed Jul 8 12:11:08 UTC 2020
+
+
+Board: Phytec phyCORE-i.MX6 Ultra Lite SOM with NAND
+detected i.MX6 UltraLite revision 1.2
+i.MX reset reason WDG (SRSR: 0x00000010)
+i.MX6 UltraLite unique ID: ea9c4e27393aa1d4
+mdio_bus: miibus0: probed
+eth0: got preset MAC address: 50:2d:f4:11:35:05
+nand: ONFI flash detected
+nand: NAND device: Manufacturer ID: 0x2c, Chip ID: 0xdc (Micron MT29F4G08ABADAH4), 512MiB, page size: 2048, OOB size: 64
+Bad block table found at page 262080, version 0x01
+Bad block table found at page 262016, version 0x01
+imx-usb 2184200.usb@2184200.of: USB EHCI 1.00
+imx-esdhc 2190000.usdhc@2190000.of: registered as mmc0
+state: New state registered 'state'
+state: Using bucket 0@0x00000000
+netconsole: registered as netconsole-1
+phySOM-i.MX6: Using environment in NAND flash
+malloc space: 0x8fe7cee0 -> 0x9fcf9dbf (size 254.5 MiB)
+running /env/bin/init...
+
+Hit m for menu or any key to stop autoboot:    2
+
+type exit to get to the menu
+barebox@Phytec phyCORE-i.MX6 Ultra Lite SOM with NAND:/ 
+barebox@Phytec phyCORE-i.MX6 Ultra Lite SOM with NAND:/ 
+barebox@Phytec phyCORE-i.MX6 Ultra Lite SOM with NAND:/ cd /mnt/mmc/
+mmc0: detected SD card version 2.0
+mmc0: registered mmc0
+barebox@Phytec phyCORE-i.MX6 Ultra Lite SOM with NAND:/mnt/mmc ks
+ks: No such file or directory
+barebox@Phytec phyCORE-i.MX6 Ultra Lite SOM with NAND:/mnt/mmc ls
+.
+..
+Schematic
+System Volume Information
+barebox.bin
+custom_images
+glibc.tar.gz
+phytec-qt5demo-image-rb-imx6ul.sdcard
+phytec-qt5demo-image-rb-imx6ul.tar.gz
+phytec-qt5demo-image-rb-imx6ul.ubifs
+phytec-yogurt-glibc-x86_64-phytec-qt5demo-image-cortexa7hf-neon-vfpv4-toolchain-BSP-Yocto-i.MX6UL-PD19.1.0.sh
+zImage
+zImage-imx6ul-phytec-ruggedboard-rdk.dtb
+barebox@Phytec phyCORE-i.MX6 Ultra Lite SOM with NAND:/mnt/mmc 
+barebox@Phytec phyCORE-i.MX6 Ultra Lite SOM with NAND:/mnt/mmc ubiformat -y /dev/nand0.root
+ubiformat: nand0.root (nand), size 531628032 bytes (507 MiB), 4056 eraseblocks of 131072 bytes (128 KiB), min. I/O size 2048 bytes
+libscan: scanning eraseblock 4055 -- 100 % complete  
+ubiformat: 4052 eraseblocks are supposedly empty
+ubiformat: 4 bad eraseblocks found, numbers: 4052, 4053, 4054, 4055
+ubiformat: formatting eraseblock 3745 -- 92 % complete  
+barebox@Phytec phyCORE-i.MX6 Ultra Lite SOM with NAND:/mnt/mmc 
+barebox@Phytec phyCORE-i.MX6 Ultra Lite SOM with NAND:/mnt/mmc 
+barebox@Phytec phyCORE-i.MX6 Ultra Lite SOM with NAND:/mnt/mmc ubiattach /dev/nand0.root
+ubi0: scanning is finished
+ubi0: registering /dev/nand0.root.ubi
+ubi0: attached mtd0 (name "nand0.root", size 507 MiB) to ubi0
+ubi0: PEB size: 131072 bytes (128 KiB), LEB size: 126976 bytes
+ubi0: min./max. I/O unit sizes: 2048/2048, sub-page size 2048
+ubi0: VID header offset: 2048 (aligned 2048), data offset: 4096
+ubi0: good PEBs: 4052, bad PEBs: 4, corrupted PEBs: 0
+ubi0: user volume: 0, internal volumes: 1, max. volumes count: 128
+ubi0: max/mean erase counter: 0/0, WL threshold: 65536, image sequence number: 11514
+ubi0: available PEBs: 3970, total reserved PEBs: 82, PEBs reserved for bad PEB handling: 76
+barebox@Phytec phyCORE-i.MX6 Ultra Lite SOM with NAND:/mnt/mmc 
+barebox@Phytec phyCORE-i.MX6 Ultra Lite SOM with NAND:/mnt/mmc 
+barebox@Phytec phyCORE-i.MX6 Ultra Lite SOM with NAND:/mnt/mmc ubimkvol -t static /dev/nand0.root.ubi kernel 8M
+ubi0: registering kernel as /dev/nand0.root.ubi.kernel
+barebox@Phytec phyCORE-i.MX6 Ultra Lite SOM with NAND:/mnt/mmc ubimkvol -t static /dev/nand0.root.ubi oftree 1M
+ubi0: registering oftree as /dev/nand0.root.ubi.oftree
+barebox@Phytec phyCORE-i.MX6 Ultra Lite SOM with NAND:/mnt/mmc ubimkvol -t dynamic /dev/nand0.root.ubi root 0   
+ubi0: registering root as /dev/nand0.root.ubi.root
+barebox@Phytec phyCORE-i.MX6 Ultra Lite SOM with NAND:/mnt/mmc ubiupdatevol /dev/nand0.root.ubi.kernel zImage
+barebox@Phytec phyCORE-i.MX6 Ultra Lite SOM with NAND:/mnt/mmc 
+barebox@Phytec phyCORE-i.MX6 Ultra Lite SOM with NAND:/mnt/mmc 
+barebox@Phytec phyCORE-i.MX6 Ultra Lite SOM with NAND:/mnt/mmc ubiupdatevol /dev/nand0.root.ubi.oftree zImage-imx6ul-phytec-ruggedboard-rdk.dtb 
+barebox@Phytec phyCORE-i.MX6 Ultra Lite SOM with NAND:/mnt/mmc 
+barebox@Phytec phyCORE-i.MX6 Ultra Lite SOM with NAND:/mnt/mmc 
+barebox@Phytec phyCORE-i.MX6 Ultra Lite SOM with NAND:/mnt/mmc cp phytec-
+phytec-qt5demo-image-rb-imx6ul.sdcard 
+phytec-qt5demo-image-rb-imx6ul.tar.gz 
+phytec-qt5demo-image-rb-imx6ul.ubifs 
+phytec-yogurt-glibc-x86_64-phytec-qt5demo-image-cortexa7hf-neon-vfpv4-toolchain-BSP-Yocto-i.MX6UL-PD19.1.0.sh 
+barebox@Phytec phyCORE-i.MX6 Ultra Lite SOM with NAND:/mnt/mmc cp phytec-
+phytec-qt5demo-image-rb-imx6ul.sdcard 
+phytec-qt5demo-image-rb-imx6ul.tar.gz 
+phytec-qt5demo-image-rb-imx6ul.ubifs 
+phytec-yogurt-glibc-x86_64-phytec-qt5demo-image-cortexa7hf-neon-vfpv4-toolchain-BSP-Yocto-i.MX6UL-PD19.1.0.sh 
+barebox@Phytec phyCORE-i.MX6 Ultra Lite SOM with NAND:/mnt/mmc cp phytec-qt5demo-image-rb-imx6ul.ubifs /dev/nand0.root.ubi.root 
+barebox@Phytec phyCORE-i.MX6 Ultra Lite SOM with NAND:/mnt/mmc reset 
+
+
+barebox 2019.01.0-bsp-yocto-i.mx6ul-pd19.1.0 #1 Wed Jul 8 12:11:08 UTC 2020
+
+
+Board: Phytec phyCORE-i.MX6 Ultra Lite SOM with NAND
+detected i.MX6 UltraLite revision 1.2
+i.MX reset reason WDG (SRSR: 0x00000010)
+i.MX6 UltraLite unique ID: ea9c4e27393aa1d4
+mdio_bus: miibus0: probed
+eth0: got preset MAC address: 50:2d:f4:11:35:05
+nand: ONFI flash detected
+nand: NAND device: Manufacturer ID: 0x2c, Chip ID: 0xdc (Micron MT29F4G08ABADAH4), 512MiB, page size: 2048, OOB size: 64
+Bad block table found at page 262080, version 0x01
+Bad block table found at page 262016, version 0x01
+imx-usb 2184200.usb@2184200.of: USB EHCI 1.00
+imx-esdhc 2190000.usdhc@2190000.of: registered as mmc0
+state: New state registered 'state'
+state: Using bucket 0@0x00000000
+netconsole: registered as netconsole-1
+phySOM-i.MX6: Using environment in NAND flash
+malloc space: 0x8fe7cee0 -> 0x9fcf9dbf (size 254.5 MiB)
+running /env/bin/init...
+
+Hit m for menu or any key to stop autoboot:    1
+booting 'nand'
+ubi0: attached by fastmap
+ubi0: fastmap pool size: 200
+ubi0: fastmap WL pool size: 100
+ubi0: registering /dev/nand0.root.ubi
+ubi0: registering kernel as /dev/nand0.root.ubi.kernel
+ubi0: registering oftree as /dev/nand0.root.ubi.oftree
+ubi0: registering root as /dev/nand0.root.ubi.root
+ubi0: attached mtd0 (name "nand0.root", size 507 MiB) to ubi0
+ubi0: PEB size: 131072 bytes (128 KiB), LEB size: 126976 bytes
+ubi0: min./max. I/O unit sizes: 2048/2048, sub-page size 2048
+ubi0: VID header offset: 2048 (aligned 2048), data offset: 4096
+ubi0: good PEBs: 4052, bad PEBs: 4, corrupted PEBs: 0
+ubi0: user volume: 3, internal volumes: 1, max. volumes count: 128
+ubi0: max/mean erase counter: 1/0, WL threshold: 65536, image sequence number: 11514
+ubi0: available PEBs: 0, total reserved PEBs: 4052, PEBs reserved for bad PEB handling: 76
+
+Loading ARM Linux zImage '/dev/nand0.root.ubi.kernel'
+Loading devicetree from '/dev/nand0.root.ubi.oftree'
+commandline: consoleblank=0 console=ttymxc0,115200n8  root=ubi0:root ubi.mtd=root rootfstype=ubifs rootwait ro fsck.repair=yes
+Starting kernel in secure mode
+[    0.000000] Booting Linux on physical CPU 0x0
+[    0.000000] Linux version 4.14.93-bsp-yocto-i.mx6ul-pd19.1.0 (oe-user@oe-host) (gcc version 7.3.0 (GCC)) #1 SMP Wed Mar 24 11:00:51 UTC 2021
+[    0.000000] CPU: ARMv7 Processor [410fc075] revision 5 (ARMv7), cr=10c5387d
+[    0.000000] CPU: div instructions available: patching division code
+[    0.000000] CPU: PIPT / VIPT nonaliasing data cache, VIPT aliasing instruction cache
+[    0.000000] OF: fdt: Machine model: Rugged Board i.MX6 UltraLite
+[    0.000000] Memory policy: Data cache writealloc
+[    0.000000] cma: Reserved 128 MiB at 0x96000000
+[    0.000000] percpu: Embedded 16 pages/cpu @dff92000 s34444 r8192 d22900 u65536
+[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 130048
+[    0.000000] Kernel command line: consoleblank=0 console=ttymxc0,115200n8  root=ubi0:root ubi.mtd=root rootfstype=ubifs rootwait ro fsck.repair=yes
+[    0.000000] PID hash table entries: 2048 (order: 1, 8192 bytes)
+[    0.000000] Dentry cache hash table entries: 65536 (order: 6, 262144 bytes)
+[    0.000000] Inode-cache hash table entries: 32768 (order: 5, 131072 bytes)
+[    0.000000] Memory: 372012K/524288K available (9216K kernel code, 410K rwdata, 3080K rodata, 1024K init, 421K bss, 21204K reserved, 131072K cma-reserved, 0K highmem)
+[    0.000000] Virtual kernel memory layout:
+[    0.000000]     vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+[    0.000000]     fixmap  : 0xffc00000 - 0xfff00000   (3072 kB)
+[    0.000000]     vmalloc : 0xe0800000 - 0xff800000   ( 496 MB)
+[    0.000000]     lowmem  : 0xc0000000 - 0xe0000000   ( 512 MB)
+[    0.000000]     pkmap   : 0xbfe00000 - 0xc0000000   (   2 MB)
+[    0.000000]     modules : 0xbf000000 - 0xbfe00000   (  14 MB)
+[    0.000000]       .text : 0xc0008000 - 0xc0a00000   (10208 kB)
+[    0.000000]       .init : 0xc0e00000 - 0xc0f00000   (1024 kB)
+[    0.000000]       .data : 0xc0f00000 - 0xc0f66860   ( 411 kB)
+[    0.000000]        .bss : 0xc0f68000 - 0xc0fd17c0   ( 422 kB)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+[    0.000000] Hierarchical RCU implementation.
+[    0.000000]  RCU event tracing is enabled.
+[    0.000000]  RCU restricting CPUs from NR_CPUS=4 to nr_cpu_ids=1.
+[    0.000000] RCU: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=1
+[    0.000000] NR_IRQS: 16, nr_irqs: 16, preallocated irqs: 16
+[    0.000000] Switching to timer-based delay loop, resolution 41ns
+[    0.000018] sched_clock: 32 bits at 24MHz, resolution 41ns, wraps every 89478484971ns
+[    0.000060] clocksource: mxc_timer1: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 79635851949 ns
+[    0.002973] Console: colour dummy device 80x30
+[    0.003035] Calibrating delay loop (skipped), value calculated using timer frequency.. 48.00 BogoMIPS (lpj=240000)
+[    0.003072] pid_max: default: 32768 minimum: 301
+[    0.003378] Mount-cache hash table entries: 1024 (order: 0, 4096 bytes)
+[    0.003417] Mountpoint-cache hash table entries: 1024 (order: 0, 4096 bytes)
+[    0.004701] CPU: Testing write buffer coherency: ok
+[    0.005292] /cpus/cpu@0 missing clock-frequency property
+[    0.005334] CPU0: thread -1, cpu 0, socket 0, mpidr 80000000
+[    0.006234] Setting up static identity map for 0x80100000 - 0x80100078
+[    0.006563] Hierarchical SRCU implementation.
+[    0.007787] smp: Bringing up secondary CPUs ...
+[    0.007823] smp: Brought up 1 node, 1 CPU
+[    0.007848] SMP: Total of 1 processors activated (48.00 BogoMIPS).
+[    0.007865] CPU: All CPU(s) started in SVC mode.
+[    0.009397] devtmpfs: initialized
+[    0.025371] random: get_random_u32 called from bucket_table_alloc+0x100/0x230 with crng_init=0
+[    0.025806] VFP support v0.3: implementor 41 architecture 2 part 30 variant 7 rev 5
+[    0.026409] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+[    0.026465] futex hash table entries: 256 (order: 2, 16384 bytes)
+[    0.037236] pinctrl core: initialized pinctrl subsystem
+[    0.039262] NET: Registered protocol family 16
+[    0.056019] DMA: preallocated 256 KiB pool for atomic coherent allocations
+[    0.058637] CPU identified as i.MX 6UL, silicon rev 1.2
+[    0.071364] vdd3p0: supplied by regulator-dummy
+[    0.072591] cpu: supplied by regulator-dummy
+[    0.073761] vddsoc: supplied by regulator-dummy
+[    0.093296] No ATAGs?
+[    0.093436] hw-breakpoint: found 5 (+1 reserved) breakpoint and 4 watchpoint registers.
+[    0.093474] hw-breakpoint: maximum watchpoint size is 8 bytes.
+[    0.097473] imx6ul-pinctrl 20e0000.iomuxc: Invalid fsl,pins or pins property in node /soc/aips-bus@2000000/iomuxc@20e0000/wlangrp
+[    0.097565] imx6ul-pinctrl 20e0000.iomuxc: initialized IMX pinctrl driver
+[    0.141378] mxs-dma 1804000.dma-apbh: initialized
+[    0.147955] vgaarb: loaded
+[    0.149026] SCSI subsystem initialized
+[    0.150080] usbcore: registered new interface driver usbfs
+[    0.150232] usbcore: registered new interface driver hub
+[    0.150456] usbcore: registered new device driver usb
+[    0.153465] i2c i2c-0: IMX I2C adapter registered
+[    0.153516] i2c i2c-0: can't use DMA, using PIO instead.
+[    0.155037] i2c i2c-1: IMX I2C adapter registered
+[    0.155081] i2c i2c-1: can't use DMA, using PIO instead.
+[    0.155487] media: Linux media interface: v0.10
+[    0.155609] Linux video capture interface: v2.00
+[    0.155749] pps_core: LinuxPPS API ver. 1 registered
+[    0.155772] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[    0.155829] PTP clock support registered
+[    0.156508] Advanced Linux Sound Architecture Driver Initialized.
+[    0.158167] Bluetooth: Core ver 2.22
+[    0.158291] NET: Registered protocol family 31
+[    0.158314] Bluetooth: HCI device and connection manager initialized
+[    0.158353] Bluetooth: HCI socket layer initialized
+[    0.158379] Bluetooth: L2CAP socket layer initialized
+[    0.158450] Bluetooth: SCO socket layer initialized
+[    0.160925] clocksource: Switched to clocksource mxc_timer1
+[    0.161198] VFS: Disk quotas dquot_6.6.0
+[    0.161351] VFS: Dquot-cache hash table entries: 1024 (order 0, 4096 bytes)
+[    0.182398] NET: Registered protocol family 2
+[    0.183820] TCP established hash table entries: 4096 (order: 2, 16384 bytes)
+[    0.183952] TCP bind hash table entries: 4096 (order: 3, 32768 bytes)
+[    0.184114] TCP: Hash tables configured (established 4096 bind 4096)
+[    0.184313] UDP hash table entries: 256 (order: 1, 8192 bytes)
+[    0.184380] UDP-Lite hash table entries: 256 (order: 1, 8192 bytes)
+[    0.184714] NET: Registered protocol family 1
+[    0.185607] RPC: Registered named UNIX socket transport module.
+[    0.185640] RPC: Registered udp transport module.
+[    0.185658] RPC: Registered tcp transport module.
+[    0.185676] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[    0.190616] workingset: timestamp_bits=30 max_order=17 bucket_order=0
+[    0.201181] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[    0.202631] NFS: Registering the id_resolver key type
+[    0.202696] Key type id_resolver registered
+[    0.202718] Key type id_legacy registered
+[    0.202834] jffs2: version 2.2. (NAND) �© 2001-2006 Red Hat, Inc.
+[    0.203915] fuse init (API version 7.26)
+[    0.216110] io scheduler noop registered
+[    0.216145] io scheduler deadline registered
+[    0.216488] io scheduler cfq registered (default)
+[    0.216515] io scheduler mq-deadline registered
+[    0.216534] io scheduler kyber registered
+[    0.226060] mxsfb 21c8000.lcdif: 21c8000.lcdif supply lcd not found, using dummy regulator
+[    0.249778] Console: switching to colour frame buffer device 100x30
+[    0.264754] mxsfb 21c8000.lcdif: initialized
+[    0.268248] imx-sdma 20ec000.sdma: loaded firmware 3.3
+[    0.277566] 2020000.serial: ttymxc0 at MMIO 0x2020000 (irq = 23, base_baud = 5000000) is a IMX
+[    0.976315] console [ttymxc0] enabled
+[    0.982022] 21e8000.serial: ttymxc1 at MMIO 0x21e8000 (irq = 62, base_baud = 5000000) is a IMX
+[    0.992193] 21ec000.serial: ttymxc2 at MMIO 0x21ec000 (irq = 63, base_baud = 5000000) is a IMX
+[    1.002366] 21f4000.serial: ttymxc4 at MMIO 0x21f4000 (irq = 64, base_baud = 5000000) is a IMX
+[    1.012695] 21fc000.serial: ttymxc5 at MMIO 0x21fc000 (irq = 65, base_baud = 5000000) is a IMX
+[    1.055432] brd: module loaded
+[    1.075654] loop: module loaded
+[    1.080328] at24 0-0052: 4096 byte 24c32 EEPROM, writable, 1 bytes/write
+[    1.097878] random: fast init done
+[    1.104566] nand: device found, Manufacturer ID: 0x2c, Chip ID: 0xdc
+[    1.111009] nand: Micron MT29F4G08ABADAH4
+[    1.115050] nand: 512 MiB, SLC, erase size: 128 KiB, page size: 2048, OOB size: 64
+[    1.123514] gpmi-nand 1806000.gpmi-nand: enable the asynchronous EDO mode 5
+[    1.131711] Bad block table found at page 262080, version 0x01
+[    1.138002] Bad block table found at page 262016, version 0x01
+[    1.144685] 3 ofpart partitions found on MTD device gpmi-nand
+[    1.150466] Creating 3 MTD partitions on "gpmi-nand":
+[    1.155626] 0x000000000000-0x000000400000 : "barebox"
+[    1.163790] 0x000000400000-0x000000500000 : "barebox-environment"
+[    1.172293] 0x000000500000-0x000020000000 : "root"
+[    1.288106] gpmi-nand 1806000.gpmi-nand: driver registered.
+[    1.300012] spi_imx 2008000.ecspi: probed
+[    1.307664] spi_imx 200c000.ecspi: probed
+[    1.313663] spi_imx 2010000.ecspi: No CS GPIOs available
+[    1.319153] spi_imx: probe of 2010000.ecspi failed with error -22
+[    1.327112] libphy: Fixed MDIO Bus: probed
+[    1.332470] CAN device driver interface
+[    1.338342] flexcan 2090000.flexcan: device registered (reg_base=e0a30000, irq=25)
+[    1.348066] fec 20b4000.ethernet: 20b4000.ethernet supply phy not found, using dummy regulator
+[    1.357916] pps pps0: new PPS source ptp0
+[    1.391997] libphy: fec_enet_mii_bus: probed
+[    1.397343] fec 20b4000.ethernet eth1: registered PHC device 0
+[    1.406001] fec 2188000.ethernet: 2188000.ethernet supply phy not found, using dummy regulator
+[    1.415910] pps pps1: new PPS source ptp1
+[    1.421750] libphy: fec_enet_mii_bus: probed
+[    1.428456] fec 2188000.ethernet eth0: registered PHC device 1
+[    1.436214] usbcore: registered new interface driver asix
+[    1.442000] usbcore: registered new interface driver ax88179_178a
+[    1.448211] usbcore: registered new interface driver cdc_ether
+[    1.454391] usbcore: registered new interface driver net1080
+[    1.460164] usbcore: registered new interface driver cdc_subset
+[    1.466368] usbcore: registered new interface driver zaurus
+[    1.472239] usbcore: registered new interface driver cdc_ncm
+[    1.478015] usbcore: registered new interface driver qmi_wwan
+[    1.483853] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[    1.490408] ehci-pci: EHCI PCI platform driver
+[    1.495021] ehci-mxc: Freescale On-Chip EHCI Host driver
+[    1.501363] usbcore: registered new interface driver cdc_wdm
+[    1.507204] usbcore: registered new interface driver usb-storage
+[    1.513689] usbcore: registered new interface driver usbserial
+[    1.519626] usbcore: registered new interface driver usbserial_generic
+[    1.526354] usbserial: USB Serial support registered for generic
+[    1.532541] usbcore: registered new interface driver option
+[    1.538207] usbserial: USB Serial support registered for GSM modem (1-port)
+[    1.545439] usbcore: registered new interface driver qcaux
+[    1.551098] usbserial: USB Serial support registered for qcaux
+[    1.557066] usbcore: registered new interface driver qcserial
+[    1.562979] usbserial: USB Serial support registered for Qualcomm USB modem
+[    1.570043] usbcore: registered new interface driver sierra
+[    1.575770] usbserial: USB Serial support registered for Sierra USB modem
+[    1.586695] imx_usb 2184000.usb: 2184000.usb supply vbus not found, using dummy regulator
+[    1.598875] ci_hdrc ci_hdrc.0: EHCI Host Controller
+[    1.603951] ci_hdrc ci_hdrc.0: new USB bus registered, assigned bus number 1
+[    1.641038] ci_hdrc ci_hdrc.0: USB 2.0 started, EHCI 1.00
+[    1.648350] hub 1-0:1.0: USB hub found
+[    1.652439] hub 1-0:1.0: 1 port detected
+[    1.658406] imx_usb 2184200.usb: 2184200.usb supply vbus not found, using dummy regulator
+[    1.670679] ci_hdrc ci_hdrc.1: EHCI Host Controller
+[    1.675841] ci_hdrc ci_hdrc.1: new USB bus registered, assigned bus number 2
+[    1.711126] ci_hdrc ci_hdrc.1: USB 2.0 started, EHCI 1.00
+[    1.718420] hub 2-0:1.0: USB hub found
+[    1.722501] hub 2-0:1.0: 1 port detected
+[    1.730794] input: 20cc000.snvs:snvs-powerkey as /devices/soc0/soc/2000000.aips-bus/20cc000.snvs/20cc000.snvs:snvs-powerkey/input/input0
+[    1.745403] Goodix-TS 0-005d: i2c test failed attempt 1: -6
+[    1.791345] Goodix-TS 0-005d: i2c test failed attempt 2: -6
+[    1.831150] Goodix-TS 0-005d: I2C communication failure: -6
+[    1.839895] rtc-m41t80 1-0068: Can't clear HT bit
+[    1.847100] snvs_rtc 20cc000.snvs:snvs-rtc-lp: rtc core: registered 20cc000.snvs:snvs-rtc-lp as rtc0
+[    1.856737] i2c /dev entries driver
+[    1.862236] IR NEC protocol handler initialized
+[    1.866814] IR RC5(x/sz) protocol handler initialized
+[    1.871995] IR RC6 protocol handler initialized
+[    1.876555] IR JVC protocol handler initialized
+[    1.881151] IR Sony protocol handler initialized
+[    1.885793] IR SANYO protocol handler initialized
+[    1.890519] IR Sharp protocol handler initialized
+[    1.895289] IR MCE Keyboard/mouse protocol handler initialized
+[    1.901181] IR XMP protocol handler initialized
+[    1.911098] imx2-wdt 20bc000.wdog: timeout 60 sec (nowayout=0)
+[    1.917889] Bluetooth: HCI UART driver ver 2.3
+[    1.922532] Bluetooth: HCI UART protocol H4 registered
+[    1.928686] sdhci: Secure Digital Host Controller Interface driver
+[    1.935004] sdhci: Copyright(c) Pierre Ossman
+[    1.939390] sdhci-pltfm: SDHCI platform and OF driver helper
+[    1.947915] sdhci-esdhc-imx 2190000.usdhc: Got CD GPIO
+[    2.011510] mmc0: SDHCI controller on 2190000.usdhc [2190000.usdhc] using ADMA
+[    2.069930] mmc0: host does not support reading read-only switch, assuming write-enable
+[    2.085387] mmc0: new high speed SDHC card at address 0007
+[    2.091034] usb 2-1: new high-speed USB device number 2 using ci_hdrc
+[    2.098628] mmcblk0: mmc0:0007 SD08G 7.42 GiB 
+[    2.105365]  mmcblk0: p1 p2
+[    2.170986] mmc1: SDHCI controller on 2194000.usdhc [2194000.usdhc] using ADMA
+[    2.186721] hidraw: raw HID events driver (C) Jiri Kosina
+[    2.195992] usbcore: registered new interface driver usbhid
+[    2.201740] usbhid: USB HID core driver
+[    2.230502] NET: Registered protocol family 10
+[    2.237881] mmc1: new high speed SDIO card at address 0001
+[    2.245882] Segment Routing with IPv6
+[    2.249734] sit: IPv6, IPv4 and MPLS over IPv4 tunneling driver
+[    2.259055] NET: Registered protocol family 17
+[    2.263697] can: controller area network core (rev 20170425 abi 9)
+[    2.270083] NET: Registered protocol family 29
+[    2.274667] can: raw protocol (rev 20170425)
+[    2.278969] can: broadcast manager protocol (rev 20170425 t)
+[    2.284718] can: netlink gateway (rev 20170425) max_hops=1
+[    2.290610] 8021q: 802.1Q VLAN Support v1.8
+[    2.295047] Key type dns_resolver registered
+[    2.302146] cpu cpu0: Using anatop regulators: LDOs enabled
+[    2.308177] Registering SWP/SWPB emulation handler
+[    2.332971] imx_thermal 2000000.aips-bus:tempmon: Industrial CPU temperature grade - max:105C critical:100C passive:95C
+[    2.345126] ubi0: default fastmap pool size: 200
+[    2.349783] ubi0: default fastmap WL pool size: 100
+[    2.354793] ubi0: attaching mtd2
+[    2.702955] ubi0: attached by fastmap
+[    2.706663] ubi0: fastmap pool size: 200
+[    2.710604] ubi0: fastmap WL pool size: 100
+[    2.731294] ubi0: attached mtd2 (name "root", size 507 MiB)
+[    2.736916] ubi0: PEB size: 131072 bytes (128 KiB), LEB size: 126976 bytes
+[    2.743938] ubi0: min./max. I/O unit sizes: 2048/2048, sub-page size 2048
+[    2.750752] ubi0: VID header offset: 2048 (aligned 2048), data offset: 4096
+[    2.757781] ubi0: good PEBs: 4052, bad PEBs: 4, corrupted PEBs: 0
+[    2.763946] ubi0: user volume: 3, internal volumes: 1, max. volumes count: 128
+[    2.771232] ubi0: max/mean erase counter: 1/0, WL threshold: 4096, image sequence number: 11514
+[    2.779950] ubi0: available PEBs: 0, total reserved PEBs: 4052, PEBs reserved for bad PEB handling: 76
+[    2.789388] ubi0: background thread "ubi_bgt0d" started, PID 99
+[    2.798051] snvs_rtc 20cc000.snvs:snvs-rtc-lp: setting system clock to 1970-01-01 00:00:01 UTC (1)
+[    2.807884] Can: disabling
+[    2.810628] wlan_en: disabling
+[    2.813925] gpio_dvfs: disabling
+[    2.817277] ALSA device list:
+[    2.820264]   No soundcards found.
+[    2.828929] cdc_ether 2-1:1.0 usb0: register 'cdc_ether' at usb-ci_hdrc.1-1, CDC Ethernet Device, 02:0c:29:a3:9b:6d
+[    2.877240] UBIFS (ubi0:2): UBIFS: mounted UBI device 0, volume 2, name "root", R/O mode
+[    2.885498] UBIFS (ubi0:2): LEB size: 126976 bytes (124 KiB), min./max. I/O unit sizes: 2048 bytes/2048 bytes
+[    2.895488] UBIFS (ubi0:2): FS size: 493047808 bytes (470 MiB, 3883 LEBs), journal size 9023488 bytes (8 MiB, 72 LEBs)
+[    2.906234] UBIFS (ubi0:2): reserved for root: 0 bytes (0 KiB)
+[    2.912118] UBIFS (ubi0:2): media format: w4/r0 (latest is w5/r0), UUID 1D1A9D24-FC1E-40B5-BE3A-B2D1E1AF38DD, small LPT model
+[    2.925648] VFS: Mounted root (ubifs filesystem) readonly on device 0:12.
+[    2.934110] devtmpfs: mounted
+[    2.939271] Freeing unused kernel memory: 1024K
+[    3.213805] systemd[1]: System time before build time, advancing clock.
+[    3.297412] systemd[1]: systemd 237 running in system mode. (-PAM -AUDIT -SELINUX -IMA -APPARMOR -SMACK +SYSVINIT -UTMP -LIBCRYPTSETUP -GCRYPT -GNUTLS -ACL -XZ +LZ4 -SECCOMP +BLKID -ELFUTILS +KMOD -I)
+[    3.320731] systemd[1]: Detected architecture arm.
+
+Welcome to The Yogurt Distribution BSP-Yocto-i.MX6UL-PD19.1.0!
+
+[    3.369971] systemd[1]: Set hostname to <rb-imx6ul>.
+[    3.386528] random: systemd: uninitialized urandom read (16 bytes read)
+[    3.393536] systemd[1]: Initializing machine ID from random generator.
+[    3.401294] systemd[1]: Installed transient /etc/machine-id file.
+[    3.712954] random: crng init done
+[    3.806680] systemd[1]: File /lib/systemd/system/systemd-journald.service:35 configures an IP firewall (IPAddressDeny=any), but the local system does not support BPF/cgroup based firewalling.
+[    3.824083] systemd[1]: Proceeding WITHOUT firewalling in effect! (This warning is only shown for the first loaded unit using IP firewalling.)
+[    4.132970] systemd[1]: Reached target Remote File Systems.
+[  OK  ] Reached target Remote File Systems.
+[    4.172940] systemd[1]: Started Dispatch Password Requests to Console Directory Watch.
+[  OK  ] Started Dispatch Password Requests to Console Directory Watch.
+[    4.213776] systemd[1]: Reached target Swap.
+[  OK  ] Reached target Swap.
+[  OK  ] Created slice User and Session Slice.
+[  OK  ] Started Forward Password Requests to Wall Directory Watch.
+[  OK  ] Reached target Paths.
+[  OK  ] Created slice System Slice.
+[  OK  ] Listening on Journal Socket.
+         Mounting Kernel Debug File System...
+         Mounting Temporary Directory (/tmp)...
+[  OK  ] Listening on udev Control Socket.
+[  OK  ] Created slice system-getty.slice.
+[  OK  ] Listening on Network Service Netlink Socket.
+         Starting Apply Kernel Variables...
+         Mounting FUSE Control File System...
+[  OK  ] Listening on udev Kernel Socket.
+         Starting udev Coldplug all Devices...
+[  OK  ] Listening on Journal Socket (/dev/log).
+[  OK  ] Listening on /dev/initctl Compatibility Named Pipe.
+         Starting File System Check on Root Device...
+[  OK  ] Created slice system-serial\x2dgetty.slice.
+[  OK  ] Reached target Slices.
+         Starting Journal Service...
+[  OK  ] Mounted Kernel Debug File System.
+[  OK  ] Mounted Temporary Directory (/tmp).
+[  OK  ] Started Apply Kernel Variables.
+[  OK  ] Mounted FUSE Control File System.
+[  OK  ] Started File System Check on Root Device.
+         Starting Remount Root and Kernel File Systems...
+[    5.153414] UBIFS (ubi0:2): start fixing up free space
+[  OK  ] Started Journal Service.
+[  OK  ] Started udev Coldplug all Devices.
+         Starting udev Wait for Complete Device Initialization...
+[***   ] (2 of 3) A start job is running for�…rnel File Systems (32s / no limit)[   36.781035] UBIFS (ubi0:2): free space fixup complete
+[   36.800449] UBIFS (ubi0:2): background thread "ubifs_bgt0_2" started, PID 123
+[  OK  ] Started Remount Root and Kernel File Systems.
+         Starting Flush Journal to Persistent Storage...
+         Starting Create System Users...
+[   37.005676] systemd-journald[115]: Received request to flush runtime journal from PID 1
+[  OK  ] Started Flush Journal to Persistent Storage.
+[  OK  ] Started Create System Users.
+         Starting Create Static Device Nodes in /dev...
+[  OK  ] Started Create Static Device Nodes in /dev.
+[  OK  ] Reached target Local File Systems (Pre).
+         Mounting /var/volatile...
+         Starting udev Kernel Device Manager...
+[  OK  ] Mounted /var/volatile.
+[  OK  ] Reached target Local File Systems.
+         Starting Rebuild Journal Catalog...
+         Starting Commit a transient machine-id on disk...
+         Starting Create Volatile Files and Directories...
+         Starting Rebuild Dynamic Linker Cache...
+[  OK  ] Started Commit a transient machine-id on disk.
+[  OK  ] Started udev Kernel Device Manager.
+         Starting Network Service...
+[  OK  ] Started Create Volatile Files and Directories.
+         Starting Run pending postinsts...
+[  OK  ] Started Rebuild Journal Catalog.
+[  OK  ] Started Network Service.
+         Starting Network Name Resolution...
+[   41.856036] Generic PHY 20b4000.ethernet-1:00: attached PHY driver [Generic PHY] (mii_bus:phy_addr=20b4000.ethernet-1:00, irq=POLL)
+[  OK  ] Started Network Name Resolution.
+[   41.965519] IPv6: ADDRCONF(NETDEV_UP): eth1: link is not ready
+[  OK  ] Found device /dev/ttymxc0.
+[   42.622262] Micrel KSZ8081 or KSZ8091 2188000.ethernet-2:01: attached PHY driver [Micrel KSZ8081 or KSZ8091] (mii_bus:phy_addr=2188000.ethernet-2:01, irq=68)
+[   42.744883] IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
+[  OK  ] Started Run pending postinsts.
+[   44.416134] fec 2188000.ethernet eth0: Link is Up - 100Mbps/Full - flow control off
+[   44.441315] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+[  OK  ] Started udev Wait for Complete Device Initialization.
+[  OK  ] Listening on Load/Save RF Kill Switch Status /dev/rfkill Watch.
+[  OK  ] Reached target Host and Network Name Lookups.
+[  OK  ] Reached target Network.
+[  OK  ] Started Rebuild Dynamic Linker Cache.
+         Starting Update is Completed...
+[  OK  ] Started Update is Completed.
+[  OK  ] Reached target System Initialization.
+[  OK  ] Listening on D-Bus System Message Bus Socket.
+[  OK  ] Started Daily Cleanup of Temporary Directories.
+[  OK  ] Reached target Timers.
+         Starting sshd.socket.
+[  OK  ] Listening on RPCbind Server Activation Socket.
+[  OK  ] Listening on sshd.socket.
+[  OK  ] Reached target Sockets.
+[  OK  ] Reached target Basic System.
+         Starting Autostart Qt 5 Demo...
+[  OK  ] Started Rauc Good-marking Service.
+[  OK  ] Started Getty on tty1.
+         Starting Network Time Service...
+[  OK  ] Started Serial Getty on ttymxc0.
+[  OK  ] Reached target Login Prompts.
+[  OK  ] Started D-Bus System Message Bus.
+         Starting Lightning Fast Webserver With Light System Requirements...
+         Starting Login Service...
+[  OK  ] Started Autostart Qt 5 Demo.
+[  OK  ] Started Login Service.
+[  OK  ] Started Network Time Service.
+[  OK  ] Started Lightning Fast Webserver With Light System Requirements.
+[  OK  ] Reached target Multi-User System.
+
+ ____                             _ _                         _
+|  _ \ _   _  __ _  __ _  ___  __| | |__   ___   __ _ _ __ __| |
+| |_) | | | |/ _` |/ _` |/ _ \/ _` | '_ \ / _ \ / _` | '__/ _` |
+|  _ <| |_| | (_| | (_| |  __/ (_| | |_) | (_) | (_| | | | (_| |
+|_| \_\\__,_|\__, |\__, |\___|\__,_|_.__/ \___/ \__,_|_|  \__,_|
+             |___/ |___/
+ _                 __         _
+(_)_ __ ___ __  __/ /_  _   _| |
+| | '_ ` _ \\ \/ / '_ \| | | | |
+| | | | | | |>  <| (_) | |_| | |
+|_|_| |_| |_/_/\_\\___/ \__,_|_|
+
+Yogurt (Phytec Example Distribution) BSP-Yocto-i.MX6UL-PD19.1.0 rb-imx6ul ttymxc0
+
+rb-imx6ul login: root
+root@rb-imx6ul:~# 
+root@rb-imx6ul:~# 
+root@rb-imx6ul:~# ifconfig 
+eth0      Link encap:Ethernet  HWaddr 50:2D:F4:11:35:05  
+          inet addr:192.168.3.11  Bcast:192.168.3.255  Mask:255.255.255.0
+          inet6 addr: fd14:9d09:fa0d:d600:522d:f4ff:fe11:3505/64 Scope:Global
+          inet6 addr: fe80::522d:f4ff:fe11:3505/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:126 errors:0 dropped:99 overruns:0 frame:0
+          TX packets:30 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:9338 (9.1 KiB)  TX bytes:3254 (3.1 KiB)
+
+eth1      Link encap:Ethernet  HWaddr 50:2D:F4:11:35:06  
+          UP BROADCAST MULTICAST  MTU:1500  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
+
+root@rb-imx6ul:~# 
+root@rb-imx6ul:~# 
+root@rb-imx6ul:~# udhcpc -i eth0
+udhcpc: started, v1.27.2
+udhcpc: sending discover
+udhcpc: sending select for 192.168.1.2
+udhcpc: lease of 192.168.1.2 obtained, lease time 86400
+/etc/udhcpc.d/50default: Adding DNS 192.168.1.1
+/etc/udhcpc.d/50default: Adding DNS 192.168.1.1
+root@rb-imx6ul:~# ping google.com
+PING google.com (216.58.200.142): 56 data bytes
+64 bytes from 216.58.200.142: seq=0 ttl=117 time=17.227 ms
+64 bytes from 216.58.200.142: seq=1 ttl=117 time=15.639 ms
+64 bytes from 216.58.200.142: seq=2 ttl=117 time=15.854 ms
+64 bytes from 216.58.200.142: seq=3 ttl=117 time=15.963 ms
+64 bytes from 216.58.200.142: seq=4 ttl=117 time=15.922 ms
+64 bytes from 216.58.200.142: seq=5 ttl=117 time=15.568 ms
+^C
+--- google.com ping statistics ---
+6 packets transmitted, 6 packets received, 0% packet loss
+round-trip min/avg/max = 15.568/16.028/17.227 ms
+root@rb-imx6ul:~#                                                      
+root@rb-imx6ul:~# 
+root@rb-imx6ul:~# 
+root@rb-imx6ul:~# 
+root@rb-imx6ul:~# 
+root@rb-imx6ul:~# 
+root@rb-imx6ul:~# 
+root@rb-imx6ul:~# 
+root@rb-imx6ul:~# 
+root@rb-imx6ul:~# 
+root@rb-imx6ul:~# 
+root@rb-imx6ul:~# 
+root@rb-imx6ul:~# 
+root@rb-imx6ul:~# 
+root@rb-imx6ul:~# 
+root@rb-imx6ul:~# date 
+Tue Sep 29 15:16:00 UTC 2020
+root@rb-imx6ul:~# date 082716492021.34
+Fri Aug 27 16:49:34 UTC 2021
+root@rb-imx6ul:~# hwclock -w -f /dev/rtc0
+root@rb-imx6ul:~# hwclock -r -f /dev/rtc0 
+Fri Aug 27 16:51:09 2021  0.000000 seconds
+root@rb-imx6ul:~# 
+
+barebox 2019.01.0-bsp-yocto-i.mx6ul-pd19.1.0 #1 Wed Jul 8 12:11:08 UTC 2020
+
+
+Board: Phytec phyCORE-i.MX6 Ultra Lite SOM with NAND
+detected i.MX6 UltraLite revision 1.2
+i.MX reset reason POR (SRSR: 0x00000001)
+i.MX6 UltraLite unique ID: ea9c4e27393aa1d4
+mdio_bus: miibus0: probed
+eth0: got preset MAC address: 50:2d:f4:11:35:05
+nand: ONFI flash detected
+nand: NAND device: Manufacturer ID: 0x2c, Chip ID: 0xdc (Micron MT29F4G08ABADAH4), 512MiB, page size: 2048, OOB size: 64
+Bad block table found at page 262080, version 0x01
+Bad block table found at page 262016, version 0x01
+imx-usb 2184200.usb@2184200.of: USB EHCI 1.00
+imx-esdhc 2190000.usdhc@2190000.of: registered as mmc0
+state: New state registered 'state'
+state: Using bucket 0@0x00000000
+netconsole: registered as netconsole-1
+phySOM-i.MX6: Using environment in NAND flash
+malloc space: 0x8fe7cee0 -> 0x9fcf9dbf (size 254.5 MiB)
+running /env/bin/init...
+
+Hit m for menu or any key to stop autoboot:    0
+booting 'nand'
+ubi0: attached by fastmap
+ubi0: fastmap pool size: 200
+ubi0: fastmap WL pool size: 100
+ubi0: registering /dev/nand0.root.ubi
+ubi0: registering kernel as /dev/nand0.root.ubi.kernel
+ubi0: registering oftree as /dev/nand0.root.ubi.oftree
+ubi0: registering root as /dev/nand0.root.ubi.root
+ubi0: attached mtd0 (name "nand0.root", size 507 MiB) to ubi0
+ubi0: PEB size: 131072 bytes (128 KiB), LEB size: 126976 bytes
+ubi0: min./max. I/O unit sizes: 2048/2048, sub-page size 2048
+ubi0: VID header offset: 2048 (aligned 2048), data offset: 4096
+ubi0: good PEBs: 4052, bad PEBs: 4, corrupted PEBs: 0
+ubi0: user volume: 3, internal volumes: 1, max. volumes count: 128
+ubi0: max/mean erase counter: 2/0, WL threshold: 65536, image sequence number: 11514
+ubi0: available PEBs: 0, total reserved PEBs: 4052, PEBs reserved for bad PEB handling: 76
+
+Loading ARM Linux zImage '/dev/nand0.root.ubi.kernel'
+Loading devicetree from '/dev/nand0.root.ubi.oftree'
+commandline: consoleblank=0 console=ttymxc0,115200n8  root=ubi0:root ubi.mtd=root rootfstype=ubifs rootwait ro fsck.repair=yes
+Starting kernel in secure mode
+[    0.000000] Booting Linux on physical CPU 0x0
+[    0.000000] Linux version 4.14.93-bsp-yocto-i.mx6ul-pd19.1.0 (oe-user@oe-host) (gcc version 7.3.0 (GCC)) #1 SMP Wed Mar 24 11:00:51 UTC 2021
+[    0.000000] CPU: ARMv7 Processor [410fc075] revision 5 (ARMv7), cr=10c5387d
+[    0.000000] CPU: div instructions available: patching division code
+[    0.000000] CPU: PIPT / VIPT nonaliasing data cache, VIPT aliasing instruction cache
+[    0.000000] OF: fdt: Machine model: Rugged Board i.MX6 UltraLite
+[    0.000000] Memory policy: Data cache writealloc
+[    0.000000] cma: Reserved 128 MiB at 0x96000000
+[    0.000000] percpu: Embedded 16 pages/cpu @dff92000 s34444 r8192 d22900 u65536
+[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 130048
+[    0.000000] Kernel command line: consoleblank=0 console=ttymxc0,115200n8  root=ubi0:root ubi.mtd=root rootfstype=ubifs rootwait ro fsck.repair=yes
+[    0.000000] PID hash table entries: 2048 (order: 1, 8192 bytes)
+[    0.000000] Dentry cache hash table entries: 65536 (order: 6, 262144 bytes)
+[    0.000000] Inode-cache hash table entries: 32768 (order: 5, 131072 bytes)
+[    0.000000] Memory: 372012K/524288K available (9216K kernel code, 410K rwdata, 3080K rodata, 1024K init, 421K bss, 21204K reserved, 131072K cma-reserved, 0K highmem)
+[    0.000000] Virtual kernel memory layout:
+[    0.000000]     vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+[    0.000000]     fixmap  : 0xffc00000 - 0xfff00000   (3072 kB)
+[    0.000000]     vmalloc : 0xe0800000 - 0xff800000   ( 496 MB)
+[    0.000000]     lowmem  : 0xc0000000 - 0xe0000000   ( 512 MB)
+[    0.000000]     pkmap   : 0xbfe00000 - 0xc0000000   (   2 MB)
+[    0.000000]     modules : 0xbf000000 - 0xbfe00000   (  14 MB)
+[    0.000000]       .text : 0xc0008000 - 0xc0a00000   (10208 kB)
+[    0.000000]       .init : 0xc0e00000 - 0xc0f00000   (1024 kB)
+[    0.000000]       .data : 0xc0f00000 - 0xc0f66860   ( 411 kB)
+[    0.000000]        .bss : 0xc0f68000 - 0xc0fd17c0   ( 422 kB)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+[    0.000000] Hierarchical RCU implementation.
+[    0.000000]  RCU event tracing is enabled.
+[    0.000000]  RCU restricting CPUs from NR_CPUS=4 to nr_cpu_ids=1.
+[    0.000000] RCU: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=1
+[    0.000000] NR_IRQS: 16, nr_irqs: 16, preallocated irqs: 16
+[    0.000000] Switching to timer-based delay loop, resolution 41ns
+[    0.000018] sched_clock: 32 bits at 24MHz, resolution 41ns, wraps every 89478484971ns
+[    0.000060] clocksource: mxc_timer1: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 79635851949 ns
+[    0.002983] Console: colour dummy device 80x30
+[    0.003047] Calibrating delay loop (skipped), value calculated using timer frequency.. 48.00 BogoMIPS (lpj=240000)
+[    0.003087] pid_max: default: 32768 minimum: 301
+[    0.003387] Mount-cache hash table entries: 1024 (order: 0, 4096 bytes)
+[    0.003425] Mountpoint-cache hash table entries: 1024 (order: 0, 4096 bytes)
+[    0.004722] CPU: Testing write buffer coherency: ok
+[    0.005313] /cpus/cpu@0 missing clock-frequency property
+[    0.005354] CPU0: thread -1, cpu 0, socket 0, mpidr 80000000
+[    0.006258] Setting up static identity map for 0x80100000 - 0x80100078
+[    0.006579] Hierarchical SRCU implementation.
+[    0.007790] smp: Bringing up secondary CPUs ...
+[    0.007825] smp: Brought up 1 node, 1 CPU
+[    0.007846] SMP: Total of 1 processors activated (48.00 BogoMIPS).
+[    0.007865] CPU: All CPU(s) started in SVC mode.
+[    0.009411] devtmpfs: initialized
+[    0.025420] random: get_random_u32 called from bucket_table_alloc+0x100/0x230 with crng_init=0
+[    0.025851] VFP support v0.3: implementor 41 architecture 2 part 30 variant 7 rev 5
+[    0.026468] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+[    0.026522] futex hash table entries: 256 (order: 2, 16384 bytes)
+[    0.037315] pinctrl core: initialized pinctrl subsystem
+[    0.039345] NET: Registered protocol family 16
+[    0.056084] DMA: preallocated 256 KiB pool for atomic coherent allocations
+[    0.058723] CPU identified as i.MX 6UL, silicon rev 1.2
+[    0.071438] vdd3p0: supplied by regulator-dummy
+[    0.072656] cpu: supplied by regulator-dummy
+[    0.073823] vddsoc: supplied by regulator-dummy
+[    0.093296] No ATAGs?
+[    0.093435] hw-breakpoint: found 5 (+1 reserved) breakpoint and 4 watchpoint registers.
+[    0.093475] hw-breakpoint: maximum watchpoint size is 8 bytes.
+[    0.097491] imx6ul-pinctrl 20e0000.iomuxc: Invalid fsl,pins or pins property in node /soc/aips-bus@2000000/iomuxc@20e0000/wlangrp
+[    0.097586] imx6ul-pinctrl 20e0000.iomuxc: initialized IMX pinctrl driver
+[    0.141593] mxs-dma 1804000.dma-apbh: initialized
+[    0.148176] vgaarb: loaded
+[    0.149239] SCSI subsystem initialized
+[    0.150282] usbcore: registered new interface driver usbfs
+[    0.150433] usbcore: registered new interface driver hub
+[    0.150657] usbcore: registered new device driver usb
+[    0.153645] i2c i2c-0: IMX I2C adapter registered
+[    0.153694] i2c i2c-0: can't use DMA, using PIO instead.
+[    0.155227] i2c i2c-1: IMX I2C adapter registered
+[    0.155271] i2c i2c-1: can't use DMA, using PIO instead.
+[    0.155668] media: Linux media interface: v0.10
+[    0.155793] Linux video capture interface: v2.00
+[    0.155935] pps_core: LinuxPPS API ver. 1 registered
+[    0.155959] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[    0.156016] PTP clock support registered
+[    0.156706] Advanced Linux Sound Architecture Driver Initialized.
+[    0.158378] Bluetooth: Core ver 2.22
+[    0.158498] NET: Registered protocol family 31
+[    0.158520] Bluetooth: HCI device and connection manager initialized
+[    0.158558] Bluetooth: HCI socket layer initialized
+[    0.158587] Bluetooth: L2CAP socket layer initialized
+[    0.158657] Bluetooth: SCO socket layer initialized
+[    0.161144] clocksource: Switched to clocksource mxc_timer1
+[    0.161416] VFS: Disk quotas dquot_6.6.0
+[    0.161795] VFS: Dquot-cache hash table entries: 1024 (order 0, 4096 bytes)
+[    0.182590] NET: Registered protocol family 2
+[    0.184029] TCP established hash table entries: 4096 (order: 2, 16384 bytes)
+[    0.184158] TCP bind hash table entries: 4096 (order: 3, 32768 bytes)
+[    0.184318] TCP: Hash tables configured (established 4096 bind 4096)
+[    0.184529] UDP hash table entries: 256 (order: 1, 8192 bytes)
+[    0.184597] UDP-Lite hash table entries: 256 (order: 1, 8192 bytes)
+[    0.184934] NET: Registered protocol family 1
+[    0.185823] RPC: Registered named UNIX socket transport module.
+[    0.185854] RPC: Registered udp transport module.
+[    0.185871] RPC: Registered tcp transport module.
+[    0.185890] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[    0.190810] workingset: timestamp_bits=30 max_order=17 bucket_order=0
+[    0.201362] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[    0.202818] NFS: Registering the id_resolver key type
+[    0.202887] Key type id_resolver registered
+[    0.202907] Key type id_legacy registered
+[    0.203016] jffs2: version 2.2. (NAND) �© 2001-2006 Red Hat, Inc.
+[    0.204096] fuse init (API version 7.26)
+[    0.216272] io scheduler noop registered
+[    0.216310] io scheduler deadline registered
+[    0.216659] io scheduler cfq registered (default)
+[    0.216687] io scheduler mq-deadline registered
+[    0.216706] io scheduler kyber registered
+[    0.226234] mxsfb 21c8000.lcdif: 21c8000.lcdif supply lcd not found, using dummy regulator
+[    0.249954] Console: switching to colour frame buffer device 100x30
+[    0.264933] mxsfb 21c8000.lcdif: initialized
+[    0.268448] imx-sdma 20ec000.sdma: loaded firmware 3.3
+[    0.277794] 2020000.serial: ttymxc0 at MMIO 0x2020000 (irq = 23, base_baud = 5000000) is a IMX
+[    0.976561] console [ttymxc0] enabled
+[    0.982229] 21e8000.serial: ttymxc1 at MMIO 0x21e8000 (irq = 62, base_baud = 5000000) is a IMX
+[    0.992403] 21ec000.serial: ttymxc2 at MMIO 0x21ec000 (irq = 63, base_baud = 5000000) is a IMX
+[    1.002566] 21f4000.serial: ttymxc4 at MMIO 0x21f4000 (irq = 64, base_baud = 5000000) is a IMX
+[    1.012904] 21fc000.serial: ttymxc5 at MMIO 0x21fc000 (irq = 65, base_baud = 5000000) is a IMX
+[    1.055720] brd: module loaded
+[    1.076024] loop: module loaded
+[    1.080694] at24 0-0052: 4096 byte 24c32 EEPROM, writable, 1 bytes/write
+[    1.098260] random: fast init done
+[    1.104969] nand: device found, Manufacturer ID: 0x2c, Chip ID: 0xdc
+[    1.111414] nand: Micron MT29F4G08ABADAH4
+[    1.115460] nand: 512 MiB, SLC, erase size: 128 KiB, page size: 2048, OOB size: 64
+[    1.123949] gpmi-nand 1806000.gpmi-nand: enable the asynchronous EDO mode 5
+[    1.132123] Bad block table found at page 262080, version 0x01
+[    1.138423] Bad block table found at page 262016, version 0x01
+[    1.145104] 3 ofpart partitions found on MTD device gpmi-nand
+[    1.150887] Creating 3 MTD partitions on "gpmi-nand":
+[    1.156050] 0x000000000000-0x000000400000 : "barebox"
+[    1.164206] 0x000000400000-0x000000500000 : "barebox-environment"
+[    1.172741] 0x000000500000-0x000020000000 : "root"
+[    1.289043] gpmi-nand 1806000.gpmi-nand: driver registered.
+[    1.300974] spi_imx 2008000.ecspi: probed
+[    1.308626] spi_imx 200c000.ecspi: probed
+[    1.314621] spi_imx 2010000.ecspi: No CS GPIOs available
+[    1.320116] spi_imx: probe of 2010000.ecspi failed with error -22
+[    1.328104] libphy: Fixed MDIO Bus: probed
+[    1.333513] CAN device driver interface
+[    1.339394] flexcan 2090000.flexcan: device registered (reg_base=e0a30000, irq=25)
+[    1.349125] fec 20b4000.ethernet: 20b4000.ethernet supply phy not found, using dummy regulator
+[    1.358963] pps pps0: new PPS source ptp0
+[    1.393054] libphy: fec_enet_mii_bus: probed
+[    1.398406] fec 20b4000.ethernet eth1: registered PHC device 0
+[    1.407089] fec 2188000.ethernet: 2188000.ethernet supply phy not found, using dummy regulator
+[    1.417137] pps pps1: new PPS source ptp1
+[    1.422828] libphy: fec_enet_mii_bus: probed
+[    1.429497] fec 2188000.ethernet eth0: registered PHC device 1
+[    1.437257] usbcore: registered new interface driver asix
+[    1.443055] usbcore: registered new interface driver ax88179_178a
+[    1.449274] usbcore: registered new interface driver cdc_ether
+[    1.455453] usbcore: registered new interface driver net1080
+[    1.461382] usbcore: registered new interface driver cdc_subset
+[    1.467430] usbcore: registered new interface driver zaurus
+[    1.473314] usbcore: registered new interface driver cdc_ncm
+[    1.479088] usbcore: registered new interface driver qmi_wwan
+[    1.484929] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[    1.491530] ehci-pci: EHCI PCI platform driver
+[    1.496100] ehci-mxc: Freescale On-Chip EHCI Host driver
+[    1.502393] usbcore: registered new interface driver cdc_wdm
+[    1.508237] usbcore: registered new interface driver usb-storage
+[    1.514750] usbcore: registered new interface driver usbserial
+[    1.520705] usbcore: registered new interface driver usbserial_generic
+[    1.527434] usbserial: USB Serial support registered for generic
+[    1.533622] usbcore: registered new interface driver option
+[    1.539293] usbserial: USB Serial support registered for GSM modem (1-port)
+[    1.546532] usbcore: registered new interface driver qcaux
+[    1.552190] usbserial: USB Serial support registered for qcaux
+[    1.558147] usbcore: registered new interface driver qcserial
+[    1.564052] usbserial: USB Serial support registered for Qualcomm USB modem
+[    1.571172] usbcore: registered new interface driver sierra
+[    1.576843] usbserial: USB Serial support registered for Sierra USB modem
+[    1.587674] imx_usb 2184000.usb: 2184000.usb supply vbus not found, using dummy regulator
+[    1.599869] ci_hdrc ci_hdrc.0: EHCI Host Controller
+[    1.604945] ci_hdrc ci_hdrc.0: new USB bus registered, assigned bus number 1
+[    1.641262] ci_hdrc ci_hdrc.0: USB 2.0 started, EHCI 1.00
+[    1.648565] hub 1-0:1.0: USB hub found
+[    1.652654] hub 1-0:1.0: 1 port detected
+[    1.658603] imx_usb 2184200.usb: 2184200.usb supply vbus not found, using dummy regulator
+[    1.670889] ci_hdrc ci_hdrc.1: EHCI Host Controller
+[    1.676051] ci_hdrc ci_hdrc.1: new USB bus registered, assigned bus number 2
+[    1.711342] ci_hdrc ci_hdrc.1: USB 2.0 started, EHCI 1.00
+[    1.718626] hub 2-0:1.0: USB hub found
+[    1.722717] hub 2-0:1.0: 1 port detected
+[    1.731021] input: 20cc000.snvs:snvs-powerkey as /devices/soc0/soc/2000000.aips-bus/20cc000.snvs/20cc000.snvs:snvs-powerkey/input/input0
+[    1.745645] Goodix-TS 0-005d: i2c test failed attempt 1: -6
+[    1.791569] Goodix-TS 0-005d: i2c test failed attempt 2: -6
+[    1.831372] Goodix-TS 0-005d: I2C communication failure: -6
+[    1.840144] rtc-m41t80 1-0068: Can't clear HT bit
+[    1.847308] snvs_rtc 20cc000.snvs:snvs-rtc-lp: rtc core: registered 20cc000.snvs:snvs-rtc-lp as rtc0
+[    1.856954] i2c /dev entries driver
+[    1.862467] IR NEC protocol handler initialized
+[    1.867048] IR RC5(x/sz) protocol handler initialized
+[    1.872231] IR RC6 protocol handler initialized
+[    1.876790] IR JVC protocol handler initialized
+[    1.881391] IR Sony protocol handler initialized
+[    1.886033] IR SANYO protocol handler initialized
+[    1.890756] IR Sharp protocol handler initialized
+[    1.895518] IR MCE Keyboard/mouse protocol handler initialized
+[    1.901412] IR XMP protocol handler initialized
+[    1.911319] imx2-wdt 20bc000.wdog: timeout 60 sec (nowayout=0)
+[    1.918108] Bluetooth: HCI UART driver ver 2.3
+[    1.922745] Bluetooth: HCI UART protocol H4 registered
+[    1.928903] sdhci: Secure Digital Host Controller Interface driver
+[    1.935219] sdhci: Copyright(c) Pierre Ossman
+[    1.939605] sdhci-pltfm: SDHCI platform and OF driver helper
+[    1.948126] sdhci-esdhc-imx 2190000.usdhc: Got CD GPIO
+[    2.011736] mmc0: SDHCI controller on 2190000.usdhc [2190000.usdhc] using ADMA
+[    2.070178] mmc0: host does not support reading read-only switch, assuming write-enable
+[    2.085645] mmc0: new high speed SDHC card at address 0007
+[    2.091288] usb 2-1: new high-speed USB device number 2 using ci_hdrc
+[    2.098905] mmcblk0: mmc0:0007 SD08G 7.42 GiB 
+[    2.105742]  mmcblk0: p1 p2
+[    2.171212] mmc1: SDHCI controller on 2194000.usdhc [2194000.usdhc] using ADMA
+[    2.187195] hidraw: raw HID events driver (C) Jiri Kosina
+[    2.196468] usbcore: registered new interface driver usbhid
+[    2.202211] usbhid: USB HID core driver
+[    2.230017] NET: Registered protocol family 10
+[    2.238513] mmc1: new high speed SDIO card at address 0001
+[    2.246539] Segment Routing with IPv6
+[    2.250406] sit: IPv6, IPv4 and MPLS over IPv4 tunneling driver
+[    2.259991] NET: Registered protocol family 17
+[    2.264648] can: controller area network core (rev 20170425 abi 9)
+[    2.271036] NET: Registered protocol family 29
+[    2.275726] can: raw protocol (rev 20170425)
+[    2.280035] can: broadcast manager protocol (rev 20170425 t)
+[    2.285815] can: netlink gateway (rev 20170425) max_hops=1
+[    2.291782] 8021q: 802.1Q VLAN Support v1.8
+[    2.296106] Key type dns_resolver registered
+[    2.307752] cdc_ether 2-1:1.0 usb0: register 'cdc_ether' at usb-ci_hdrc.1-1, CDC Ethernet Device, 02:0c:29:a3:9b:6d
+[    2.318810] cpu cpu0: Using anatop regulators: LDOs enabled
+[    2.324979] Registering SWP/SWPB emulation handler
+[    2.354807] imx_thermal 2000000.aips-bus:tempmon: Industrial CPU temperature grade - max:105C critical:100C passive:95C
+[    2.366812] ubi0: default fastmap pool size: 200
+[    2.371594] ubi0: default fastmap WL pool size: 100
+[    2.376495] ubi0: attaching mtd2
+[    3.047419] random: crng init done
+[    3.669224] ubi0: attached by fastmap
+[    3.673046] ubi0: fastmap pool size: 200
+[    3.676991] ubi0: fastmap WL pool size: 100
+[    3.697572] ubi0: attached mtd2 (name "root", size 507 MiB)
+[    3.703308] ubi0: PEB size: 131072 bytes (128 KiB), LEB size: 126976 bytes
+[    3.710209] ubi0: min./max. I/O unit sizes: 2048/2048, sub-page size 2048
+[    3.717093] ubi0: VID header offset: 2048 (aligned 2048), data offset: 4096
+[    3.724114] ubi0: good PEBs: 4052, bad PEBs: 4, corrupted PEBs: 0
+[    3.730227] ubi0: user volume: 3, internal volumes: 1, max. volumes count: 128
+[    3.737502] ubi0: max/mean erase counter: 2/0, WL threshold: 4096, image sequence number: 11514
+[    3.746250] ubi0: available PEBs: 0, total reserved PEBs: 4052, PEBs reserved for bad PEB handling: 76
+[    3.755665] ubi0: background thread "ubi_bgt0d" started, PID 99
+[    3.764912] snvs_rtc 20cc000.snvs:snvs-rtc-lp: setting system clock to 2021-08-27 16:51:29 UTC (1630083089)
+[    3.777498] Can: disabling
+[    3.781298] wlan_en: disabling
+[    3.785360] gpio_dvfs: disabling
+[    3.788643] ALSA device list:
+[    3.791688]   No soundcards found.
+[    3.831704] UBIFS (ubi0:2): recovery needed
+[    3.951397] UBIFS (ubi0:2): recovery deferred
+[    3.955987] UBIFS (ubi0:2): UBIFS: mounted UBI device 0, volume 2, name "root", R/O mode
+[    3.964179] UBIFS (ubi0:2): LEB size: 126976 bytes (124 KiB), min./max. I/O unit sizes: 2048 bytes/2048 bytes
+[    3.974179] UBIFS (ubi0:2): FS size: 493047808 bytes (470 MiB, 3883 LEBs), journal size 9023488 bytes (8 MiB, 72 LEBs)
+[    3.984927] UBIFS (ubi0:2): reserved for root: 0 bytes (0 KiB)
+[    3.990780] UBIFS (ubi0:2): media format: w4/r0 (latest is w5/r0), UUID 1D1A9D24-FC1E-40B5-BE3A-B2D1E1AF38DD, small LPT model
+[    4.009222] VFS: Mounted root (ubifs filesystem) readonly on device 0:12.
+[    4.022305] devtmpfs: mounted
+[    4.027711] Freeing unused kernel memory: 1024K
+[    4.377429] systemd[1]: systemd 237 running in system mode. (-PAM -AUDIT -SELINUX -IMA -APPARMOR -SMACK +SYSVINIT -UTMP -LIBCRYPTSETUP -GCRYPT -GNUTLS -ACL -XZ +LZ4 -SECCOMP +BLKID -ELFUTILS +KMOD -I)
+[    4.400722] systemd[1]: Detected architecture arm.
+
+Welcome to The Yogurt Distribution BSP-Yocto-i.MX6UL-PD19.1.0!
+
+[    4.450227] systemd[1]: Set hostname to <rb-imx6ul>.
+[    4.861706] systemd[1]: File /lib/systemd/system/systemd-journald.service:35 configures an IP firewall (IPAddressDeny=any), but the local system does not support BPF/cgroup based firewalling.
+[    4.878981] systemd[1]: Proceeding WITHOUT firewalling in effect! (This warning is only shown for the first loaded unit using IP firewalling.)
+[    5.176430] systemd[1]: Started Forward Password Requests to Wall Directory Watch.
+[  OK  ] Started Forward Password Requests to Wall Directory Watch.
+[    5.222055] systemd[1]: Reached target Swap.
+[  OK  ] Reached target Swap.
+[    5.259794] systemd[1]: Created slice User and Session Slice.
+[  OK  ] Created slice User and Session Slice.
+[    5.301733] systemd[1]: Reached target Remote File Systems.
+[  OK  ] Reached target Remote File Systems.
+[    5.333977] systemd[1]: Created slice System Slice.
+[  OK  ] Created slice System Slice.
+[  OK  ] Listening on /dev/initctl Compatibility Named Pipe.
+[  OK  ] Reached target Slices.
+[  OK  ] Created slice system-serial\x2dgetty.slice.
+[  OK  ] Listening on udev Control Socket.
+[  OK  ] Created slice system-getty.slice.
+[  OK  ] Listening on Network Service Netlink Socket.
+[  OK  ] Listening on Journal Socket.
+         Mounting FUSE Control File System...
+[  OK  ] Listening on udev Kernel Socket.
+         Starting File System Check on Root Device...
+         Mounting Kernel Debug File System...
+[  OK  ] Listening on Journal Socket (/dev/log).
+         Starting Journal Service...
+         Starting udev Coldplug all Devices...
+[  OK  ] Started Dispatch Password Requests to Console Directory Watch.
+[  OK  ] Reached target Paths.
+         Mounting Temporary Directory (/tmp)...
+         Starting Apply Kernel Variables...
+[  OK  ] Mounted FUSE Control File System.
+[  OK  ] Started File System Check on Root Device.
+[  OK  ] Mounted Kernel Debug File System.
+[  OK  ] Mounted Temporary Directory (/tmp).
+         Starting Remount Root and Kernel File Systems...
+[  OK  ] Started Apply Kernel Variables.
+[    6.245953] UBIFS (ubi0:2): completing deferred recovery
+[  OK  ] Started Journal Service.
+[    6.576147] UBIFS (ubi0:2): background thread "ubifs_bgt0_2" started, PID 121
+[    6.610022] UBIFS (ubi0:2): deferred recovery completed
+[  OK  ] Started Remount Root and Kernel File Systems.
+         Starting Flush Journal to Persistent Storage...
+         Starting Create System Users...
+[  OK  ] Started Create System Users.
+[    6.994479] systemd-journald[112]: Received request to flush runtime journal from PID 1
+         Starting Create Static Device Nodes in /dev...
+[  OK  ] Started Flush Journal to Persistent Storage.
+[  OK  ] Started Create Static Device Nodes in /dev.
+[  OK  ] Reached target Local File Systems (Pre).
+         Mounting /var/volatile...
+         Starting udev Kernel Device Manager...
+[  OK  ] Mounted /var/volatile.
+[  OK  ] Reached target Local File Systems.
+         Starting Rebuild Journal Catalog...
+         Starting Rebuild Dynamic Linker Cache...
+         Starting Create Volatile Files and Directories...
+[  OK  ] Started Rebuild Journal Catalog.
+[  OK  ] Started Create Volatile Files and Directories.
+[  OK  ] Started udev Kernel Device Manager.
+         Starting Network Service...
+[  OK  ] Started udev Coldplug all Devices.
+         Starting udev Wait for Complete Device Initialization...
+[  OK  ] Started Network Service.
+         Starting Network Name Resolution...
+[  OK  ] Started Network Name Resolution.
+[  OK  ] Reached target Host and Network Name Lookups.
+[  OK  ] Reached target Network.
+[  OK  ] Found device /dev/ttymxc0.
+[   11.553566] Generic PHY 20b4000.ethernet-1:00: attached PHY driver [Generic PHY] (mii_bus:phy_addr=20b4000.ethernet-1:00, irq=POLL)
+[   11.625940] IPv6: ADDRCONF(NETDEV_UP): eth1: link is not ready
+[   12.172448] Micrel KSZ8081 or KSZ8091 2188000.ethernet-2:01: attached PHY driver [Micrel KSZ8081 or KSZ8091] (mii_bus:phy_addr=2188000.ethernet-2:01, irq=68)
+[   12.283830] IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
+[  OK  ] Started udev Wait for Complete Device Initialization.
+[  OK  ] Started Rebuild Dynamic Linker Cache.
+[  OK  ] Listening on Load/Save RF Kill Switch Status /dev/rfkill Watch.
+         Starting Update is Completed...
+[  OK  ] Started Update is Completed.
+[  OK  ] Reached target System Initialization.
+[   13.912945] fec 2188000.ethernet eth0: Link is Up - 100Mbps/Full - flow control off
+[   13.920734] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+[  OK  ] Listening on RPCbind Server Activation Socket.
+[  OK  ] Listening on D-Bus System Message Bus Socket.
+         Starting sshd.socket.
+[  OK  ] Started Daily Cleanup of Temporary Directories.
+[  OK  ] Reached target Timers.
+[  OK  ] Listening on sshd.socket.
+[  OK  ] Reached target Sockets.
+[  OK  ] Reached target Basic System.
+[  OK  ] Started Getty on tty1.
+         Starting Lightning Fast Webserver With Light System Requirements...
+         Starting Autostart Qt 5 Demo...
+         Starting Network Time Service...
+         Starting Login Service...
+[  OK  ] Started Rauc Good-marking Service.
+[  OK  ] Started D-Bus System Message Bus.
+[  OK  ] Started Login Service.
+[  OK  ] Started Serial Getty on ttymxc0.
+[  OK  ] Reached target Login Prompts.
+[  OK  ] Started Lightning Fast Webserver With Light System Requirements.
+[  OK  ] Started Autostart Qt 5 Demo.
+[  OK  ] Started Network Time Service.
+[  OK  ] Reached target Multi-User System.
+
+ ____                             _ _                         _
+|  _ \ _   _  __ _  __ _  ___  __| | |__   ___   __ _ _ __ __| |
+| |_) | | | |/ _` |/ _` |/ _ \/ _` | '_ \ / _ \ / _` | '__/ _` |
+|  _ <| |_| | (_| | (_| |  __/ (_| | |_) | (_) | (_| | | | (_| |
+|_| \_\\__,_|\__, |\__, |\___|\__,_|_.__/ \___/ \__,_|_|  \__,_|
+             |___/ |___/
+ _                 __         _
+(_)_ __ ___ __  __/ /_  _   _| |
+| | '_ ` _ \\ \/ / '_ \| | | | |
+| | | | | | |>  <| (_) | |_| | |
+|_|_| |_| |_/_/\_\\___/ \__,_|_|
+
+Yogurt (Phytec Example Distribution) BSP-Yocto-i.MX6UL-PD19.1.0 rb-imx6ul ttymxc0
+
+rb-imx6ul login: root
+root@rb-imx6ul:~# date 
+Fri Aug 27 16:51:59 UTC 2021
+root@rb-imx6ul:~# date 
+Fri Aug 27 16:52:04 UTC 2021
+root@rb-imx6ul:~# date 
+Fri Aug 27 16:52:06 UTC 2021
+root@rb-imx6ul:~# date 
+Fri Aug 27 16:52:08 UTC 2021
+root@rb-imx6ul:~# date 
+Fri Aug 27 16:52:10 UTC 2021
+root@rb-imx6ul:~# ping google.com
+PING google.com (216.58.200.142): 56 data bytes
+64 bytes from 216.58.200.142: seq=0 ttl=117 time=18.167 ms
+64 bytes from 216.58.200.142: seq=1 ttl=117 time=15.636 ms
+64 bytes from 216.58.200.142: seq=2 ttl=117 time=15.777 ms
+64 bytes from 216.58.200.142: seq=3 ttl=117 time=16.088 ms
+^C
+--- google.com ping statistics ---
+4 packets transmitted, 4 packets received, 0% packet loss
+round-trip min/avg/max = 15.636/16.417/18.167 ms
+root@rb-imx6ul:~# cccccccccccccccccccccc
+-sh: cccccccccccccccccccccc: command not found
+root@rb-imx6ul:~# 
+root@rb-imx6ul:~# 
+root@rb-imx6ul:~# 
+root@rb-imx6ul:~# pip3  install pyserial
+Collecting pyserial
+  Downloading https://files.pythonhosted.org/packages/07/bc/587a445451b253b285629263eb51c2d8e9bcea4fc97826266d186f96f558/pyserial-3.5-py2.py3-none-any.whl (90kB)
+    100% |################################| 92kB 482kB/s 
+Installing collected packages: pyserial
+Successfully installed pyserial-3.5
+You are using pip version 9.0.2, however version 21.2.4 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
+root@rb-imx6ul:~# pip3  install numpy   
+Collecting numpy
+  Downloading https://files.pythonhosted.org/packages/01/1b/d3ddcabd5817be02df0e6ee20d64f77ff6d0d97f83b77f65e98c8a651981/numpy-1.18.5.zip (5.4MB)
+    100% |################################| 5.4MB 15kB/s 
+Installing collected packages: numpy

@@ -1,0 +1,42 @@
+To enable Autologin without giving root:
+
+Step 1 : Enter into "serial-getty\@.service" file in the below mentioned path in the Rootfile system of the board.
+
+$ vi /lib/systemd/system/serial-getty\@.service
+
+
+Step 2 :  Make the modifications in "serial-getty\@.service"  file as shown.
+
+    Search for the line "ExecStart=-/sbin/agetty -8 -L %I 115200 $TERM" in the above mentioned file.
+    Add "-- autologin root" in the same line as shown below and save the file.
+               
+ExecStart=-/sbin/agetty -8 --autologin root -L %I 115200 $TERM
+
+Step 3 : After the above modifications , Reboot the board. After Reboot we can observe the Autologin to Rootfile system.
+
+$ reboot
+___________________________________________________________________________________________________________________________________
+Service file:
+
+1) Save the programs you want to run on board in a script in the /home/root directory format like,
+
+test.py-->test.sh
+
+2) Go to the directory,
+
+cd /etc/profile.d/
+
+3) create a environment script file,
+
+vi env.sh
+
+4) Add the path of your files to be run automatically during boot process inside the created env.sh
+ex:
+/home/root/test1.sh &
+sleep 2
+/home/root/test2.sh &
+sleep 2
+.
+.
+
+5) reboot the board and check for the service file running in the background.

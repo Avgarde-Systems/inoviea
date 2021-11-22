@@ -1,0 +1,7 @@
+mount /dev/mmcblk0p1 /mnt/
+
+sh ec200t.sh
+
+cd /mnt/Ruggedboard/mqtt_test
+
+python3 mqtt_client.py
